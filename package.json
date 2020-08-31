@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Create a reduce for the useReducer hook to dispatch a function with arguments.",
   "main": "dist/index.js",
+  "unpkg": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/darmou/function_reducer"
