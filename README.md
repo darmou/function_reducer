@@ -19,6 +19,7 @@ function App() {
 
 }
 ```
+Where todo is a named parameter (`{todo: todo}).
 
 Below is the todosStore:
 ```
@@ -27,14 +28,6 @@ import produce from "immer";
 export default  {
   add: ({state, todo}) => {
       return {...state, todos: [...state.todos, todo]}
-  },
-
-  increment: ({state}) => {
-    return {...state, count: state.count+1 }
-  },
-
-  decrement: ({state}) => {
-    return {...state, count: state.count-1 }
   },
 
   update: ({state, index, todo}) => {
