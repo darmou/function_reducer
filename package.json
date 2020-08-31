@@ -1,0 +1,20 @@
+{
+  "name": "function_reducer",
+  "version": "1.0.0",
+  "description": "Create a reduce for the useReducer hook to dispatch a function with arguments.",
+  "main": "index.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/darmou/function_reducer"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "reducer",
+    "ReactJS",
+    "hooks"
+  ],
+  "author": "Daryl Moulder",
+  "license": "ISC"
+}
