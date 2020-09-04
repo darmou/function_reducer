@@ -1,14 +1,15 @@
 # Introduction
-The normal way to use a reducer is to have a switch statement with the action having a type and payload.  This reducer makes it easier to function 
+The normal way to use a reducer is to have a switch statement with the action having a type and payload.  This
+reducer makes it easier to dispatch a function with some named parameters.
 
 # To use this function reducer:
 ```
-import function_reducer from "function_reducer";
+import functionReducer from "function_reducer";
 import todosStore from "./todosStore";
 
 
 function App() {
-  const [state, dispatch] = React.useReducer(function_reducer, initialState);
+  const [state, dispatch] = React.useReducer(functionReducer, initialState);
 
 
  ....
@@ -19,7 +20,7 @@ function App() {
 
 }
 ```
-Where todo is a named parameter (`{todo: todo}).
+Where todo is a named parameter (`{todo: todo}`).
 
 Below is the todosStore:
 ```

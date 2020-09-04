@@ -1,6 +1,6 @@
 {
   "name": "function-reducer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create a reduce for the useReducer hook to dispatch a function with arguments.",
   "main": "dist/index.js",
   "unpkg": "dist/index.js",
