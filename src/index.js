@@ -25,6 +25,11 @@ exports.__esModule = true;
 exports["default"] = void 0;
 var function_reducer = function (state, action) {
     var action_fn = action.action_fn, params = __rest(action, ["action_fn"]);
-    return action_fn(__assign({ state: state }, params));
+    if (typeof action_fn === "function") {
+        return action_fn(__assign({ state: state }, params));
+    }
+    else {
+        return state;
+    }
 };
 exports["default"] = function_reducer;

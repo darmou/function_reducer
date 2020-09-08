@@ -1,6 +1,6 @@
 {
   "name": "function-reducer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Create a reduce for the useReducer hook to dispatch a function with arguments.",
   "main": "dist/index.js",
   "unpkg": "dist/index.js",
@@ -9,6 +9,7 @@
     "url": "https://github.com/darmou/function_reducer"
   },
   "scripts": {
+    "build": "tsc src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
