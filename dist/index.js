@@ -21,9 +21,9 @@ var __rest = (this && this.__rest) || function (s, e) {
         }
     return t;
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = void 0;
-var function_reducer = function (state, action) {
+exports.__esModule = true;
+exports["default"] = exports.logReducer = void 0;
+var functionReducer = function (state, action) {
     var action_fn = action.action_fn, params = __rest(action, ["action_fn"]);
     if (typeof action_fn === "function") {
         return action_fn(__assign({ state: state }, params));
@@ -32,5 +32,11 @@ var function_reducer = function (state, action) {
         return state;
     }
 };
-exports.default = function_reducer;
+exports["default"] = functionReducer;
+// Optional function to help with debugging
+exports.logReducer = function (functionReducer, state, action) {
+    var action_fn = action.action_fn, params = __rest(action, ["action_fn"]);
+    console.log(new Date().toISOString() + " | name: " + (action_fn === null || action_fn === void 0 ? void 0 : action_fn.name) + ", params: " + JSON.stringify(params));
+    return functionReducer(state, action);
+};
 //# sourceMappingURL=index.js.map

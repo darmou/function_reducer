@@ -1,2 +1,3 @@
-declare const function_reducer: (state: any, action: any) => any;
-export { function_reducer as default };
+declare const functionReducer: (state: any | null, action: any) => any;
+export declare const logReducer: (functionReducer: (state: any | null, action: any) => any, state: any | null, action: any) => any;
+export { functionReducer as default };
