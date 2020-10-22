@@ -44,3 +44,13 @@ export default  {
   }
 }
 ```
+
+## We can also use a logging middleware
+```
+import functionReducer, { logReducer } from "function_reducer";
+
+function App() {
+  const [state, dispatch] = React.useReducer((state, action) => logReducer(functionReducer, state, action), initialState);
+  ....
+
+```
