@@ -28,21 +28,20 @@ Below is the todosStore:
 import produce from "immer";
 
 export default  {
-  add: ({state, todo}) => {
-      return {...state, todos: [...state.todos, todo]}
+  add: function({state, todo}) {
+      return {...state, todos: [...state.todos, todo]};
   },
-  setTodo: ({state, todo}) => {
+  setTodo: function({state, todo}) {
     return produce(state, draftState => {
       draftState.todo = todo;
     });
   },
-  update: ({state, index, todo}) => {
+  update: function ({state, index, todo}) {
     return produce(state, draftState => {
       draftState.todos[index] = {...draftState.todos[index], ...todo};
     });
   },
-
-  delete: ({state, index}) => {
+  delete: function ({state, index}) {
     return produce(state, draftState => {
       draftState.todos.splice(index, 1);
     });
