@@ -9,6 +9,7 @@ import todosStore from "./todosStore";
 
 
 function App() {
+  const initialState = { todos: [], todo: null };
   const [state, dispatch] = React.useReducer(functionReducer, initialState);
 
 
@@ -30,7 +31,11 @@ export default  {
   add: ({state, todo}) => {
       return {...state, todos: [...state.todos, todo]}
   },
-
+  setTodo: ({state, todo}) => {
+    return produce(state, draftState => {
+      draftState.todo = todo;
+    });
+  },
   update: ({state, index, todo}) => {
     return produce(state, draftState => {
       draftState.todos[index] = {...draftState.todos[index], ...todo};
