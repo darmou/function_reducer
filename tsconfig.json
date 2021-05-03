@@ -5,6 +5,7 @@
         "sourceMap": true,
         "outDir": "dist/",
         "declaration": true,
-        "strict": true
-    }    
+        "strict": true,
+        "allowSyntheticDefaultImports": true
+    }
 }
