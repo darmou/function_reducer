@@ -1,6 +1,6 @@
 {
   "name": "function-reducer",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Create a reduce for the useReducer hook to dispatch a function with arguments.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -25,6 +25,8 @@
   "author": "Daryl Moulder",
   "license": "MIT",
   "dependencies": {
-    "object-hash": "^2.1.1"
+    "@types/react": "^17.0.8",
+    "object-hash": "^2.1.1",
+    "react": "^17.0.2"
   }
 }
